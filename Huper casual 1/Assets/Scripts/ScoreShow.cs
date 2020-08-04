@@ -3,10 +3,12 @@ using UnityEngine.UI;
 
 public class ScoreShow : MonoBehaviour
 {
-    public Text text;
+    public Text score;
+    public Text maxScore;
 
     private void Start() 
     {
-        text.text = PlatformSpawner.instance.score.ToString();
+        score.text = PlatformSpawner.instance.score.ToString();
+        maxScore.text = Save.instance.score.ToString();
     }
 }

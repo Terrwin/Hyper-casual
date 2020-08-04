@@ -40,6 +40,7 @@
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\PlatformRotation.cs" />
      <Compile Include="Assets\Scripts\PlatformSpawner.cs" />
+     <Compile Include="Assets\Scripts\Save.cs" />
      <Compile Include="Assets\Scripts\ScoreShow.cs" />
      <Compile Include="Assets\Scripts\Speed.cs" />
     <Reference Include="UnityEngine">
