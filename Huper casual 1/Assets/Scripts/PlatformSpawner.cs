@@ -10,13 +10,11 @@ public class PlatformSpawner : MonoBehaviour
     public Text text;
     public Transform spawn;
     public static PlatformSpawner instance;
-
     private void Start()
     {
         instance = this;
         platforms = GameObject.FindGameObjectsWithTag("Platform");
     }
-
     private void FixedUpdate() 
     {   
         for (int i = 0; i < 10; i++)

@@ -33,13 +33,13 @@ public class PlatformRotation : MonoBehaviour
     {
         if (other.gameObject.tag == "Respawn")
         {
-            SceneManager.LoadScene("DeathScreen");
             Save.instance.LoadGame();
             if (PlatformSpawner.instance.score > Save.instance.score)
             {
                 Save.instance.score = PlatformSpawner.instance.score;
                 Save.instance.SaveGame();
             }
+            SceneManager.LoadScene("DeathScreen");
         }
         if (other.gameObject.tag == "SideOfPlatform")
         {
