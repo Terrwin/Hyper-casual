@@ -66,9 +66,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12718}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 12920}
     - Class: 114
-      Script: {instanceID: 16088}
+      Script: {instanceID: 13090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -133,7 +133,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12718}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 13090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -186,7 +186,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12718}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 13090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -578,6 +578,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeathScreenMenu
+  - hash:
+      serializedVersion: 2
       Hash: 21d73eda81c18eacd2c91ad5dfaf2e32
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -672,12 +678,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DeathScreenMenu
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity

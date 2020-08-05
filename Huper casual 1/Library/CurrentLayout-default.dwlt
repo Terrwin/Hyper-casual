@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 521}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 577, y: 471}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 579, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 58
+  controlID: 104
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1367
     height: 947
-  m_MinSize: {x: 302, y: 471}
+  m_MinSize: {x: 303, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 103
+  controlID: 97
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1367
     height: 671
-  m_MinSize: {x: 302, y: 200}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 104
+  controlID: 98
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,8 +185,8 @@ MonoBehaviour:
     y: 0
     width: 459
     height: 671
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -212,8 +212,8 @@ MonoBehaviour:
     y: 0
     width: 908
     height: 671
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 14}
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 553
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -308,7 +308,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8ebbffffaebbffff48bcffff30bdffff34bdfffffebfffff7ccbfffffacbffff9cd1ffff3ed2ffff9cd7ffff64daffff2cf7ffff50f8ffff44f9ffff6afbffff6e3e00008c3f0000
+      m_ExpandedIDs: 20e6ffff40e6ffffdae6ffffc6e7ffffd2e7ffff3ce8ffff64eaffff7aeaffffdaeaffff46f4ffff92f4ffff84f9ffffc2f9ffffc6faffff6afbffff8636000044380000743800008a3b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.23263896, y: -0.7031644, z: 0.2649208, w: 0.6174777}
     speed: 2
-    m_Value: {x: 0.23263632, y: -0.7031564, z: 0.2649178, w: 0.61747074}
+    m_Value: {x: -0.23263896, y: 0.7031644, z: -0.2649208, w: -0.6174777}
   m_Size:
     m_Target: 51.666122
     speed: 2
@@ -641,9 +641,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6c340000
-    m_LastClickedID: 13420
-    m_ExpandedIDs: 000000006234000000ca9a3b
+    m_SelectedIDs: 96340000
+    m_LastClickedID: 13462
+    m_ExpandedIDs: 000000007034000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -671,7 +671,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000062340000
+    m_ExpandedIDs: 0000000070340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -702,18 +702,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000c6510000e06300001863000076640000cc620000365b0000dc5d0000e45a00005457000026390000ec3b0000103c0000a43c0000a63c0000ac3c00006e490000be490000784d00001a5300006c3c0000004700002c3800004e3900007c420000203f0000d8390000d2390000de390000e23e0000a03e0000503e00004c38000052380000e8380000163900001c3900003039000036390000b03d0000a8490000804700005449000066490000ca420000d242000056420000da4200001c35000014350000c46a0000d46a0000726b000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: DeathScreenMenu
-      m_OriginalName: DeathScreenMenu
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 16088
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 720, y: 1280}
+  m_TargetSize: {x: 1440, y: 3040}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -868,10 +868,10 @@ MonoBehaviour:
     controlPanelFoldoutValues: 010101
     extensionNames: []
     extensionStates: []
-    scale: 39
+    scale: 19
     fitToScreenEnabled: 1
     rotationDegree: 0
     highlightSafeAreaEnabled: 0
-    friendlyName: Xiaomi Redmi 4
+    friendlyName: Samsung Galaxy S10 5G
     networkReachability: 0
     systemLanguage: 10
