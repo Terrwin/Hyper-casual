@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlatformRotation : MonoBehaviour
 {
-    [SerializeField]private Transform platform;
+    private Transform platform = null;
     private Transform previousPlatform;
     private float X = 0;
     
@@ -33,17 +33,27 @@ public class PlatformRotation : MonoBehaviour
     {
         if (other.gameObject.tag == "Respawn")
         {
-            Save.instance.LoadGame();
+            Save.instance.LoadScore();
             if (PlatformSpawner.instance.score > Save.instance.score)
             {
                 Save.instance.score = PlatformSpawner.instance.score;
-                Save.instance.SaveGame();
+                Save.instance.points += PlatformSpawner.instance.score;
+                Save.instance.SaveScore();
+            }
+            else 
+            {
+                Save.instance.points += PlatformSpawner.instance.score;
+                Save.instance.SaveScore();
             }
             SceneManager.LoadScene("DeathScreen");
         }
         if (other.gameObject.tag == "SideOfPlatform")
         {
             PlatformSpawner.instance.Destroing(previousPlatform.gameObject);
+        }
+        if (other.gameObject.tag == "Coin")
+        {
+            Destroy(other.gameObject);
         }
     }
 }

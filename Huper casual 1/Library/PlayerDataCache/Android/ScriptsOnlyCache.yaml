@@ -2,12 +2,15 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraFollow
+    - DeathScreenMenu
     - Menu
     - PlatformRotation
     - PlatformSpawner
     - Save
     - ScoreShow
     - Speed
+    Unity.DeviceSimulator.Editor.dll:
+    - Unity.DeviceSimulator.SimulatorWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -57,8 +60,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11410}
     - Class: 114
-      Script: {instanceID: 11728}
-    - Class: 114
       Script: {instanceID: 11808}
     - Class: 114
       Script: {instanceID: 12218}
@@ -66,6 +67,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12718}
     - Class: 114
       Script: {instanceID: 13088}
+    - Class: 114
+      Script: {instanceID: 16088}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -365,7 +368,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: e813c40504fa91d2a2c6050123a45c27
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu
@@ -479,13 +482,13 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: ed4638347259b2cc31477265544e0c38
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlatformRotation
   - hash:
       serializedVersion: 2
-      Hash: bfdf060b2603148594c3c06838d1c1db
+      Hash: 19bd276aed08c1f809c5be0df2295a83
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Save
@@ -669,6 +672,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeathScreenMenu
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity

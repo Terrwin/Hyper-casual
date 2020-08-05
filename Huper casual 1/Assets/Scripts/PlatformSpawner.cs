@@ -10,6 +10,7 @@ public class PlatformSpawner : MonoBehaviour
     public Text text;
     public Transform spawn;
     public static PlatformSpawner instance;
+    
     private void Start()
     {
         instance = this;

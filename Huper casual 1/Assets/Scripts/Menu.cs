@@ -1,20 +1,31 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
+    [SerializeField]private Text pointsText;
+    public static Menu instance;
+    
     public void GameStart()
     {
         SceneManager.LoadScene("Game");
     }
 
-    public void Restart()
+    private void Start()
     {
-        SceneManager.LoadScene("Game");
+        instance = this;
+        PointsRefresh();
     }
 
-    public void MenuReturn()
+    private void Update() 
     {
-        SceneManager.LoadScene("Menu");
+        PointsRefresh();
+    }
+
+    public void PointsRefresh()
+    {
+        Save.instance.LoadScore();
+        pointsText.text = Save.instance.points.ToString();
     }
 }

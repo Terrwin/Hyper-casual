@@ -6,35 +6,34 @@ using System.IO;
 public class Save : MonoBehaviour
 {
     public int score;
+    public int points;
     public static Save instance;
 
-    private void Start()
+    private void Awake()
     {
         instance = this;
     }
-    public void SaveGame()
+    public void SaveScore()
     {
         BinaryFormatter bf = new BinaryFormatter(); 
-        FileStream file = File.Create(Application.persistentDataPath 
-            + "/MySaveData.dat"); 
+        FileStream file = File.Create(Application.persistentDataPath + "/MySaveData.dat"); 
         SaveData data = new SaveData();
         data.maxScore = score;
+        data.allPoints = points;
         bf.Serialize(file, data);
         file.Close();
     }
 
-    public void LoadGame()
+    public void LoadScore()
     {
-        if (File.Exists(Application.persistentDataPath 
-            + "/MySaveData.dat"))
+        if (File.Exists(Application.persistentDataPath + "/MySaveData.dat"))
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = 
-            File.Open(Application.persistentDataPath 
-            + "/MySaveData.dat", FileMode.Open);
+            FileStream file = File.Open(Application.persistentDataPath + "/MySaveData.dat", FileMode.Open);
             SaveData data = (SaveData)bf.Deserialize(file);
             file.Close();
             score = data.maxScore;
+            points = data.allPoints;
         }
     }
 }
@@ -43,4 +42,5 @@ public class Save : MonoBehaviour
 class SaveData
 {
     public int maxScore;
+    public int allPoints;
 }

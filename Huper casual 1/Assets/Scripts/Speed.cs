@@ -5,6 +5,7 @@ using UnityEngine;
 public class Speed : MonoBehaviour
 {
     private int score = 0;
+    
     void FixedUpdate()
     {
         if (PlatformSpawner.instance.score % 20 == 0 && PlatformSpawner.instance.score != score)

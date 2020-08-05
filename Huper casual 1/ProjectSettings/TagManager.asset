@@ -8,6 +8,7 @@ TagManager:
   - Star
   - Platform
   - SideOfPlatform
+  - Coin
   layers:
   - Default
   - TransparentFX
