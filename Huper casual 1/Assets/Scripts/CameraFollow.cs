@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform sphere;
-
+    [SerializeField]private Transform sphere;
 
     void FixedUpdate()
     {

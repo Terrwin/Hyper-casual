@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class ScoreShow : MonoBehaviour
 {
-    public Text score;
-    public Text maxScore;
+    [SerializeField]private Text score;
+    [SerializeField]private Text maxScore;
 
     private void Start() 
     {

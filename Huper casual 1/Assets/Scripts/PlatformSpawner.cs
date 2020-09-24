@@ -3,13 +3,13 @@ using UnityEngine.UI;
 
 public class PlatformSpawner : MonoBehaviour
 {
-    public int score;
-    public float speed = 0.05f;
+    public static PlatformSpawner instance;
     public GameObject[] platformsPrefabs;
     public GameObject[] platforms;
-    public Text text;
-    public Transform spawn;
-    public static PlatformSpawner instance;
+    public int score = 0;
+    public float speed = 0.05f;
+    [SerializeField]private Text text;
+    [SerializeField]private Transform spawn;
     
     private void Start()
     {
@@ -23,7 +23,7 @@ public class PlatformSpawner : MonoBehaviour
             if (platforms[i].transform.position.z >= 15f || platforms[i] == null)
             {
                 Destroing(platforms[i]);
-                score += 1;
+                score += 100;
                 text.text = score.ToString();
                 platforms[i] = Instantiate(platformsPrefabs[Random.Range(0, 3)], spawn.position, spawn.rotation) as GameObject;
             }
@@ -34,5 +34,10 @@ public class PlatformSpawner : MonoBehaviour
     public void Destroing(GameObject platform)
     {
         Destroy(platform);
+    }
+
+    public void PreviousScore(int previousScore)
+    {
+        score = previousScore;
     }
 }

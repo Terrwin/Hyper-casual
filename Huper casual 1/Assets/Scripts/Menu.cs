@@ -1,16 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField]private Text pointsText;
     public static Menu instance;
-    
-    public void GameStart()
-    {
-        SceneManager.LoadScene("Game");
-    }
+    public List<BallColorSO> ballColorsSO;
+    [SerializeField]private Text pointsText;
 
     private void Start()
     {
@@ -27,5 +25,20 @@ public class Menu : MonoBehaviour
     {
         Save.instance.LoadScore();
         pointsText.text = Save.instance.points.ToString();
+    }
+
+    public void GameStart()
+    {
+        SceneManager.LoadScene("Game");
+    }
+
+    public void Shop()
+    {
+        SceneManager.LoadScene("Shop");
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

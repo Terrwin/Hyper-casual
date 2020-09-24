@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
@@ -7,6 +9,8 @@ public class Save : MonoBehaviour
 {
     public int score;
     public int points;
+    public List<int> colors = new List<int>();
+    public int currentColor;
     public static Save instance;
 
     private void Awake()
@@ -20,6 +24,8 @@ public class Save : MonoBehaviour
         SaveData data = new SaveData();
         data.maxScore = score;
         data.allPoints = points;
+        data.colorsBuyed = colors;
+        data.colorEnabled = currentColor;
         bf.Serialize(file, data);
         file.Close();
     }
@@ -34,6 +40,8 @@ public class Save : MonoBehaviour
             file.Close();
             score = data.maxScore;
             points = data.allPoints;
+            colors = data.colorsBuyed;
+            currentColor = data.colorEnabled;
         }
     }
 }
@@ -43,4 +51,6 @@ class SaveData
 {
     public int maxScore;
     public int allPoints;
+    public List<int> colorsBuyed;
+    public int colorEnabled;
 }

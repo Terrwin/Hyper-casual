@@ -5,10 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - Star
   - Platform
-  - SideOfPlatform
-  - Coin
+  - DeathField
   layers:
   - Default
   - TransparentFX
