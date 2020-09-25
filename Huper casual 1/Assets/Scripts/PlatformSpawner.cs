@@ -23,7 +23,7 @@ public class PlatformSpawner : MonoBehaviour
             if (platforms[i].transform.position.z >= 15f || platforms[i] == null)
             {
                 Destroing(platforms[i]);
-                score += 100;
+                score += 1;
                 text.text = score.ToString();
                 platforms[i] = Instantiate(platformsPrefabs[Random.Range(0, 3)], spawn.position, spawn.rotation) as GameObject;
             }

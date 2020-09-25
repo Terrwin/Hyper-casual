@@ -11,7 +11,7 @@ public class ShopMenu : MonoBehaviour
     [SerializeField]private List<GameObject> notBuyedImages;
     [SerializeField]private GameObject DontHavePointsText;
     private int flag = 0;
-    private List<int> price = new List<int>(){0, 1000, 1000, 1000, 1000, 1000, 1000, 10000};  
+    private List<int> price = new List<int>(){0, 100, 1000, 1000, 1000, 1000, 1000, 10000};  
     public static ShopMenu instance;
 
     private void Start()
