@@ -17,7 +17,6 @@ public class ShopMenu : MonoBehaviour
     private void Start()
     {
         instance = this;
-        Save.instance.LoadScore();
         CheckEnable(Save.instance.currentColor);
         for (int i = 0; i < 8; i++)
         {
@@ -25,13 +24,9 @@ public class ShopMenu : MonoBehaviour
         }
     }
 
-    public void MenuExit()
-    {
-        SceneManager.LoadScene("Menu");
-    }
-
     public void CheckEnable(int number)
     {
+        Save.instance.LoadScore();
         DontHavePointsText.SetActive(false);
         for (int j = 0; j < Save.instance.colors.Count; j++)
         {
@@ -53,12 +48,14 @@ public class ShopMenu : MonoBehaviour
                 flag++;
             }
         }
+
         if (flag == Save.instance.colors.Count)
         {
             if (Save.instance.colors.Count == 0)
             {
                 Save.instance.colors = new List<int>(){0};
             }
+
             if (Save.instance.colors.Count != 0 && Save.instance.points >= price[number])
             {
                 Save.instance.colors.Add(number);

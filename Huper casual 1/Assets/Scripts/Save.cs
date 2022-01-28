@@ -11,12 +11,14 @@ public class Save : MonoBehaviour
     public int points;
     public List<int> colors = new List<int>();
     public int currentColor;
+    public bool controll;
     public static Save instance;
 
-    private void Awake()
+    private void Start()
     {
         instance = this;
     }
+    
     public void SaveScore()
     {
         BinaryFormatter bf = new BinaryFormatter(); 
@@ -26,6 +28,7 @@ public class Save : MonoBehaviour
         data.allPoints = points;
         data.colorsBuyed = colors;
         data.colorEnabled = currentColor;
+        data.controllType = controll;
         bf.Serialize(file, data);
         file.Close();
     }
@@ -42,6 +45,7 @@ public class Save : MonoBehaviour
             points = data.allPoints;
             colors = data.colorsBuyed;
             currentColor = data.colorEnabled;
+            controll = data.controllType;
         }
     }
 }
@@ -53,4 +57,5 @@ class SaveData
     public int allPoints;
     public List<int> colorsBuyed;
     public int colorEnabled;
+    public bool controllType;
 }

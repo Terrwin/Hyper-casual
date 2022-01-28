@@ -14,21 +14,32 @@ public class PlatformRotation : MonoBehaviour
     private Transform previousPlatform;
     private float X = 0;
     private int previousScore = 0;
+    private bool controll;
     
     private void Start() 
     {
         instance = this;
-        Save.instance.LoadScore();
+        Save.instance.LoadScore();        
         gameObject.GetComponent<Renderer>().material = Menu.instance.ballColorsSO[Save.instance.currentColor].material;
+        controll = Save.instance.controll;
     }
+
     private void FixedUpdate()
     {
-        foreach (Touch touch in Input.touches)
+        if (controll == false)
         {
-            if (touch.phase == TouchPhase.Moved)
+            X += Input.acceleration.x / 2f;
+            platform.rotation = Quaternion.Euler(0f, 0f, X);
+        }
+        else
+        {
+            foreach (Touch touch in Input.touches)
             {
-                X += Input.GetAxis("Mouse X") / 4f;
-                platform.rotation = Quaternion.Euler(0f, 0f, X);
+                if (touch.phase == TouchPhase.Moved)
+                {
+                    X += Input.GetAxis("Mouse X") / 4f;
+                    platform.rotation = Quaternion.Euler(0f, 0f, X);
+                }
             }
         }
     }

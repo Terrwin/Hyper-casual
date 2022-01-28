@@ -19,12 +19,15 @@ public class Menu : MonoBehaviour
     private void Update() 
     {
         PointsRefresh();
-    }
+    } 
 
     public void PointsRefresh()
     {
-        Save.instance.LoadScore();
-        pointsText.text = Save.instance.points.ToString();
+        if (pointsText != null)
+        {
+            Save.instance.LoadScore();
+            pointsText.text = Save.instance.points.ToString();
+        }
     }
 
     public void GameStart()
@@ -35,6 +38,16 @@ public class Menu : MonoBehaviour
     public void Shop()
     {
         SceneManager.LoadScene("Shop");
+    }
+
+    public void Settings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+
+    public void MenuExit()
+    {
+        SceneManager.LoadScene("Menu");
     }
 
     public void Exit()
